@@ -428,40 +428,53 @@ section { padding: 120px 72px; position: relative; }
 .method .section-head h2 em { color: var(--clay); }
 .method .section-head p { color: rgba(253,242,240,0.72); font-size: 18px; margin-top: 20px; max-width: 56ch; }
 
-.rise-grid {
+.bb-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 0;
   border-top: 1px solid rgba(253,242,240,0.22);
 }
 
-.rise-step {
-  padding: 44px 32px 50px;
+.bb-card {
+  padding: 48px 44px 52px;
   border-left: 1px solid rgba(253,242,240,0.22);
   transition: background 0.4s;
 }
-.rise-step:first-child { border-left: none; }
-.rise-step:hover { background: rgba(253,242,240,0.06); }
+.bb-card:first-child { border-left: none; }
+.bb-card:hover { background: rgba(253,242,240,0.06); }
 
-.rise-letter {
+.bb-word {
   font-family: var(--display);
   font-weight: 300;
   font-variation-settings: 'opsz' 144, 'SOFT' 70;
-  font-size: 110px;
+  font-size: 56px;
   line-height: 1;
   color: var(--clay);
   display: block;
+  margin-bottom: 18px;
 }
 
-.rise-step h3 {
-  font-family: var(--display);
-  font-weight: 420;
-  font-size: 24px;
-  margin: 18px 0 12px;
-  color: var(--blush);
+.bb-card > p {
+  font-size: 15.5px;
+  color: rgba(253,242,240,0.78);
+  margin-bottom: 20px;
 }
-
-.rise-step p { font-size: 15px; color: rgba(253,242,240,0.7); }
+.bb-card ul { list-style: none; }
+.bb-card li {
+  position: relative;
+  padding: 11px 0 11px 24px;
+  font-size: 15px;
+  color: rgba(253,242,240,0.78);
+  border-top: 1px solid rgba(253,242,240,0.14);
+}
+.bb-card li::before {
+  content: '';
+  position: absolute;
+  left: 2px; top: 19px;
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--clay);
+}
 
 .method-tagline {
   margin-top: 80px;
@@ -686,9 +699,9 @@ footer {
   .hero { grid-template-columns: 1fr; padding: 140px 36px 60px; gap: 70px; }
   .hero-copy h1 { max-width: none; }
   .path-grid, .voices-grid { grid-template-columns: 1fr; max-width: 460px; margin: 0 auto; }
-  .rise-grid { grid-template-columns: 1fr 1fr; }
-  .rise-step:nth-child(odd) { border-left: none; }
-  .rise-step { border-top: 1px solid rgba(253,242,240,0.22); }
+  .bb-grid { grid-template-columns: 1fr; }
+  .bb-card { border-left: none; border-top: 1px solid rgba(253,242,240,0.22); }
+  .bb-card:first-child { border-top: none; }
   .about-inner { grid-template-columns: 1fr; padding: 70px 40px; gap: 60px; }
   .foot-grid { grid-template-columns: 1fr 1fr; }
   .letters { margin: 0 20px 20px; padding: 80px 32px; }
@@ -765,7 +778,7 @@ footer {
     <article class="path-card reveal">
       <div class="path-img"><div class="breath-field"></div><img src="images/pathway-activation.png" alt="A circle of women in a sunlit room practicing breathwork together"><div class="tint"></div></div>
       <p class="path-kicker">your deepest transformation</p>
-      <h3>The Freedom Activation&trade;</h3>
+      <h3>Business Freedom Activation&trade;</h3>
       <p>90 days from overthinking to moving. Nervous system work and real business foundations in the same container, at the same time. 30 minutes a day. No grinding.</p>
       <a href="freedom-activation/index.html" class="path-link">Explore the program</a>
     </article>
@@ -790,29 +803,29 @@ footer {
 <section class="method" id="method">
   <div class="section-head reveal">
     <p class="eyebrow">How it works</p>
-    <h2 class="display">The RISE Method&trade; &mdash; body first, <em>business second</em></h2>
-    <p>Hustle programs add pressure to a body that&rsquo;s already overwhelmed. Strategy programs hand you a playbook you can&rsquo;t run. Mindset programs work on the mind while the body keeps running the show. This works differently &mdash; because the block isn&rsquo;t in your calendar. It&rsquo;s in your cells.</p>
+    <h2 class="display">The Breathe &amp; Build Method&trade; &mdash; body first, <em>business second</em></h2>
+    <p>Hustle programs add pressure to a body that&rsquo;s already overwhelmed. Strategy programs hand you a playbook you can&rsquo;t run. Mindset programs work on the mind while the body keeps running the show. This works differently &mdash; because the block isn&rsquo;t in your calendar. It&rsquo;s in your cells. So we work both sides, woven together, every single week.</p>
   </div>
-  <div class="rise-grid">
-    <div class="rise-step reveal">
-      <span class="rise-letter">R</span>
-      <h3>Restore</h3>
-      <p>Somatic breathwork regulates the fear response that shuts you down every time you get close to being seen. Safety first &mdash; everything else is built on it.</p>
+  <div class="bb-grid">
+    <div class="bb-card reveal">
+      <span class="bb-word">Breathe</span>
+      <p>Before anyone asks you to show up, we make it safe for your body to let you. Your nervous system isn&rsquo;t just where the freeze lives &mdash; it&rsquo;s the channel the Divine speaks through. Regulated, the clarity arrives and bold action becomes possible.</p>
+      <ul>
+        <li>Breathwork and movement to regulate and arrive</li>
+        <li>Visioning until the woman you&rsquo;re becoming feels more real than the fear</li>
+        <li>Identity work to become the woman who follows through</li>
+        <li>Releasing the conditioning never designed for your joy</li>
+      </ul>
     </div>
-    <div class="rise-step reveal d1">
-      <span class="rise-letter">I</span>
-      <h3>Imagine</h3>
-      <p>Visioning connects you to the woman who already follows through &mdash; so the action you take is aligned and God-led, not forced from willpower.</p>
-    </div>
-    <div class="rise-step reveal d2">
-      <span class="rise-letter">S</span>
-      <h3>Shift</h3>
-      <p>Release the conditioning that taught you to stay small, undercharge, and refuse help. Becoming the woman who shows up, finishes, and charges what she&rsquo;s worth.</p>
-    </div>
-    <div class="rise-step reveal d3">
-      <span class="rise-letter">E</span>
-      <h3>Embody</h3>
-      <p>Bold aligned action from a regulated body. The offer goes live. The posts go out. The business gets built &mdash; through devotion, not hustle.</p>
+    <div class="bb-card reveal d1">
+      <span class="bb-word">Build</span>
+      <p>This is where the vision becomes a real business structure that can hold it. Not hustle, not pressure. Ten minutes to breathe and arrive, twenty to take one real step &mdash; each one laid down on a nervous system that finally feels safe enough to hold it.</p>
+      <ul>
+        <li>Ideal client clarity and a brand voice that sounds like you</li>
+        <li>An offer that&rsquo;s real, deliverable, and priced for its value</li>
+        <li>The LLC filed and the foundations set</li>
+        <li>Content going out, outreach happening, money moving</li>
+      </ul>
     </div>
   </div>
   <p class="method-tagline reveal">Regulated body + solid foundations + bold action = <em>a soul-led business that actually thrives</em></p>
@@ -897,14 +910,14 @@ footer {
     </div>
     <div class="foot-col">
       <h4>Pathways</h4>
-      <a href="freedom-activation/index.html">The Freedom Activation&trade;</a>
+      <a href="freedom-activation/index.html">Business Freedom Activation&trade;</a>
       <a href="#pathways">Breathwork Journeys</a>
       <a href="#pathways">Free Souls Club&trade;</a>
     </div>
     <div class="foot-col">
       <h4>Explore</h4>
       <a href="#about">About</a>
-      <a href="#method">The RISE Method&trade;</a>
+      <a href="#method">The Breathe &amp; Build Method&trade;</a>
       <a href="guide/index.html">The Map (free guide)</a>
       <a href="#">Blog</a>
       <a href="#">Shop</a>

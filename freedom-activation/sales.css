@@ -388,6 +388,23 @@ section { padding: 110px 44px; position: relative; }
 }
 .rise-row p { color: var(--maroon-soft); margin-bottom: 14px; max-width: 60ch; }
 .rise-row p:last-child { margin-bottom: 0; }
+.rise-row .letter.bbnum { font-size: 70px; }
+.rise-body ul { list-style: none; margin-top: 16px; max-width: 60ch; }
+.rise-body li {
+  position: relative;
+  padding: 10px 0 10px 24px;
+  color: var(--maroon-soft);
+  font-size: 15.5px;
+  border-top: 1px solid var(--maroon-faint);
+}
+.rise-body li::before {
+  content: '';
+  position: absolute;
+  left: 2px; top: 18px;
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--clay);
+}
 
 /* ---------- deliverables grid ---------- */
 .receive { background: var(--blush-deep); }
